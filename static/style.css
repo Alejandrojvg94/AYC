@@ -1,0 +1,254 @@
+body{
+    background-color: #FFFFFF;
+    margin: 0;
+    color: #262E31;
+}
+a {
+    transition: 0.3s ease;
+    font-family: sans-serif;
+    color: #FFC603;
+    text-decoration: none;
+    font-weight: 700 ;
+}
+a:hover{
+    color: #f4ddb4;
+}
+html body header{
+    display:  flex;
+    justify-content: space-between;
+    background-color: #022D3D;
+    box-shadow: 3px 0 5px #aaa;
+    padding: 15px 30px;
+    position: relative;
+    z-index: 2;
+}
+header .logo{
+    font-size: 20px;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    font-weight: 800;
+    margin-left: 50px;
+}
+html body nav ul{
+    list-style-type: none;
+    font-size: 16px;
+    margin-top: 50px;
+}
+html body nav ul li{
+    display: inline-block;
+}
+html body nav ul li a{
+    padding: 0 15px;
+}
+.footer{
+    padding: 80px 0 0 0;
+    background-color: #022D3D;
+    color: #FFC603;
+}
+.center{
+    display: flex;
+    justify-content: center;
+}
+.content{
+    width: 1200px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.padded{
+    padding: 20px 30px;
+    text-align: center;
+    margin-top: 20px;
+}
+.img{
+    text-align: center;
+    margin-top: 5px;
+}
+.full-width{
+    width: 100%;
+}
+
+
+/* footer y enlaces */
+.social-links{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.social-links a{
+    margin: 0 10px;
+    margin-bottom: 30px;
+}
+.social{
+    padding: 10px;
+    border-radius: 15px;
+}
+
+
+/* parte de home o inicio */
+.hero{
+    position: relative;
+    z-index: 1;
+    display: flex ;
+    padding: 20px 50px;
+    justify-content: center;
+}
+.hero .hero-content{
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+}
+.hero h1{
+    font-family: sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.hero p{
+    font-family: sans-serif;
+    margin-bottom: 50px;
+    text-align: justify;
+    font-size: 25px;
+    color: #358F91;
+}
+.left{
+    width: 600px;
+    align-self: center;
+}
+.left a:hover{
+    color: #f4ddb4;
+}
+.btn{
+    background-color: #022D3D;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 15px;
+}
+.contact-form input{
+    font-family: sans-serif;
+    border: none;
+    height: 30px;
+    padding: 5px 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    width: 100%;
+}
+.contact-form textarea{
+    font-family: sans-serif;
+    border: none;
+    height: 100px;
+    padding: 15px 10px;
+    resize: none;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.contact-form .btn{
+    width: 104%;
+    color: #f1ae2b;
+}
+.contact-form .btn:hover{
+    color: #f4ddb4;
+}
+/* seccion de productos */
+.cards{
+    padding: 10px;
+    margin: 10px;
+    height: 10%;
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: -80px 35px 20%;
+    padding: 0 50px;
+    
+}
+.card{
+    height: 250px;
+    width: 250px;
+    margin: 40px;
+    border-radius: 8px;
+    border: 1px solid #262E31;
+    box-shadow: 2px 2px 2px #358F91;;
+    transition: 300ms;
+    margin-bottom: 0;
+}
+.nombre{
+    font-family: sans-serif;
+    text-align: center;
+    color: #358F91;
+    margin: 5px 0 10px;
+}
+.footer-card{
+    background-color: #022D3D;
+    border-radius: 8px;
+    padding: 0;
+    text-align: center;
+    align-content: end;
+}
+
+
+
+
+
+
+/* efecto navegación */
+
+nav * {
+    box-sizing: border-box;
+    transition: all .35s ease;
+}
+
+nav li {
+    display: inline-block;
+    list-style: outside none none;
+    margin: .5em 1em;
+    padding: 0;
+}
+
+nav a {
+    padding: .5em .8em;
+    color: #FFC603;
+    position: relative;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav a::before,
+nav a::after {
+    content: '';
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    transition: all .35s ease;
+    opacity: 0;
+}
+
+nav a::before {
+    content: '';
+    right: 0;
+    top: 0;
+    border-top: 3px solid #f4ddb4;
+    border-right: 3px solid #f4ddb4;
+    transform: translate(-100%, 50%);
+}
+
+nav a:after {
+    content: '';
+    left: 0;
+    bottom: 0;
+    border-bottom: 3px solid #f4ddb4;
+    border-left: 3px solid #f4ddb4;
+    transform: translate(100%, -50%)
+}
+nav a:hover:before,
+nav a:hover:after{
+    transform: translate(0,0);
+    opacity: 1;
+}  
+nav a:hover {
+    color: #f4ddb4;
+}
